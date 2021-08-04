@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/item_list_in_managing"
+        android:orderInCategory="100"
+
+        android:title="List"
+        android:icon="@drawable/ic_baseline_list_24"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item_tags_in_managing"
+        android:orderInCategory="200"
+
+        android:title="Tags"
+        android:icon="@drawable/ic_baseline_label_24"
+        app:showAsAction="never"/>
+</menu>

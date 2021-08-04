@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.to_do_list">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/to_do_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UpdateTagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdateListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddTagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ManageListsAndTagsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdateCalDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FormInCalendar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListInCalendar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdateDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ToDoFormActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".AlertReceiver"
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>

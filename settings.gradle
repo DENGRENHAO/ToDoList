@@ -1,0 +1,10 @@
+include ':library'
+include ':sample'
+include ':library'
+include ':sample'
+include ':swipe-reveal-layout'
+include ':app'
+project(':swipe-reveal-layout').projectDir = new File(rootDir, 'SwipeRevealLayout-master/swipe-reveal-layout/')
+project(':sample').projectDir = new File(rootDir, 'Material-Calendar-View-master/sample/')
+project(':library').projectDir = new File(rootDir, 'Material-Calendar-View-master/library/')
+rootProject.name = "To_Do_List"

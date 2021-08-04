@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/ic_baseline_keyboard_arrow_down_24"
+        android:state_empty="true"/>
+    <item
+        android:drawable="@drawable/ic_baseline_keyboard_arrow_left_24"
+        android:state_expanded="true"/>
+</animated-selector>

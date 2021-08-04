@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:title="General">
+        <menu>
+            <group
+                android:id="@+id/menu_top"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_inbox"
+                    android:icon="@drawable/ic_baseline_all_inbox_24"
+                    android:title="Inbox" />
+<!--                <item-->
+<!--                    android:id="@+id/nav_list"-->
+<!--                    android:icon="@drawable/ic_baseline_list_24"-->
+<!--                    android:title="Lists" />-->
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:title="Sort By">
+        <menu>
+            <group
+                android:id="@+id/menu_middle"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_date"
+                    android:icon="@drawable/ic_baseline_calendar_today_24"
+                    android:title="Date" />
+                <item
+                    android:id="@+id/nav_date_today"
+                    android:title="     Today"/>
+                <item
+                    android:id="@+id/nav_date_tomorrow"
+                    android:title="     Tomorrow"/>
+                <item
+                    android:id="@+id/nav_date_next_7_days"
+                    android:title="     Next 7 Days"/>
+                <item
+                    android:id="@+id/nav_date_just_do_it_later"
+                    android:title="     Just do it later"/>
+                <item
+                    android:id="@+id/nav_date_overdue"
+                    android:title="     Overdue"/>
+                <item
+                    android:id="@+id/nav_priority"
+                    android:icon="@drawable/ic_baseline_error_outline_small"
+                    android:title="Priority" />
+                <item
+                    android:id="@+id/nav_priority_high"
+                    android:title="     High Priority"/>
+                <item
+                    android:id="@+id/nav_priority_medium"
+                    android:title="     Medium Priority"/>
+                <item
+                    android:id="@+id/nav_priority_low"
+                    android:title="     Low Priority"/>
+                <item
+                    android:id="@+id/nav_priority_none"
+                    android:title="     No Priority"/>
+                <item
+                    android:id="@+id/nav_tag"
+                    android:icon="@drawable/ic_baseline_label_24"
+                    android:title="Tags" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_baseline_settings_24"
+                android:title="Manage Lists &amp; Tags" />
+        </menu>
+    </item>
+
+</menu>

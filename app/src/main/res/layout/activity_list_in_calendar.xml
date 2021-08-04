@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ListInCalendar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#5D72EC"
+        android:id="@+id/toolBarInCalList"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:elevation="4dp"/>
+
+    <LinearLayout
+        android:id="@+id/mainLinearLayoutInCal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/myRecyclerViewInCal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabInCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="70dp"
+        app:tint="@color/white"
+        app:backgroundTint="#2EBDE8"
+        android:elevation="10dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:fabSize="normal"
+        app:pressedTranslationZ="15dp"
+        app:rippleColor="#5D72EC" />
+
+    <ImageView
+        android:id="@+id/noWorkImageInCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_empty_box"
+        android:alpha="0.5"
+        app:layout_anchor="@+id/mainLinearLayoutInCal"
+        app:layout_anchorGravity="center" />
+
+    <TextView
+        android:id="@+id/noWorkTextInCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have no work on this day!"
+        android:alpha="0.5"
+        android:textColor="@color/purple_200"
+        app:layout_anchor="@+id/noWorkImageInCal"
+        app:layout_anchorGravity="bottom|center" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
